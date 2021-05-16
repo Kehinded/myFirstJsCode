@@ -20,26 +20,28 @@ function convertFahrToCelsius(f){
 creates an array of numbers from 1 to n and replaces multiples of 2, 3, and 5 with "yu", "gi" and "oh", 
 logs the resulting array to the console then returns the resulting array.
 */
-function checkYuGiOh(n){
-    var n;
-     if (isNaN(n)==true){
-        if (Array.isArray(n)==true){
-            console.log("invalid paramters: " + JSON.stringify(n));
-         } else if (typeof(n)=="object"){
-            console.log("invalid paramters: " + JSON.stringify(n));
-         } 
+function checkYuGiOh(num){
+    var num;
+     if (isNaN(num)==true){
+        if (Array.isArray(num)==true){
+            console.log("invalid parameter: " + JSON.stringify(num));
+         } else if (typeof(num)=="object"){
+            console.log("invalid paramter: " + JSON.stringify(num));
+         } else {
+            console.log("invalid paramter: " + JSON.stringify(num));
+         }
      }
      else {
          var ans;
 
          //assigning the check function to a variable and passing the parameter in the checkYuGiOh function to it
-         ans = check(n);
+         ans = create(num);
 
-         //a function that replaces multiples of 2, 3, and 5 with "yu", "gi" and "oh"
-         function check(num){
-            var num;
+         //a function that creates an array of numbers from 1 to n and replaces multiples of 2, 3, and 5 with "yu", "gi" and "oh"
+         function create(n){
+            var n;
             var arr = [];
-            for (i=1; i<=num; i++){
+            for (i=1; i<=n; i++){
                 if (i%2==0 && i%3==0 && i%5==0){
                    arr.push("yu-gi-oh");
                    console.log(arr);
