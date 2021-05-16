@@ -16,6 +16,8 @@ You can use the following cases as guides:
 - convertFahrToCelsius({temp: 0}) should return `{temp: 0} is not a valid number but a/an object.`
  
 
+
+
 2. Write a function named "checkYuGiOh" that takes a number, n, as an argument, creates an array of numbers from 1 to n and replaces multiples of 2, 3, and 5 with "yu", "gi" and "oh", logs the resulting array to the console then returns the resulting array.
 
 Note:
